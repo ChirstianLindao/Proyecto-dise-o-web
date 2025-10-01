@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal Tecnologías Emergentes</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primario: "#696D78", // Azul
+            secundario: "#f59e0b" // Amarillo
+          },
+          fontFamily: {
+            normal: ["Arial", "sans-serif"],
+            fancy: ["Georgia", "serif"]
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+</head>
+
+<body class="font-normal bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen overflow-x-hidden">
+
+  <nav id="mainNav" class="sticky top-0 flex justify-between items-center p-4 bg-primario text-white z-50 shadow-md">
+    <h1 class="font-bold text-lg">Tecnologías Emergentes</h1>
+    <ul class="hidden md:flex gap-4 text-sm md:text-base">
+      <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+      <li><a href="#ia" class="hover:underline">IA</a></li>
+      <li><a href="#ml" class="hover:underline">Machine Learning</a></li>
+      <li><a href="#tec" class="hover:underline">Tecnologías</a></li>
+      <li><a href="#tendencias" class="hover:underline">Tendencias 2025</a></li>
+      <li><a href="#videos" class="hover:underline">Videos</a></li>
+      <li><a href="#recursos" class="hover:underline">Recursos</a></li>
+      <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+    </ul>
+    <div class="flex gap-2 items-center">
+      <button onclick="toggleTheme()" class="bg-secundario text-black px-2 py-1 rounded">Tema</button>
+      <button onclick="toggleFont()" class="bg-secundario text-black px-2 py-1 rounded">Fuente</button>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4">
+
+<section id="inicio" class="py-12 text-center">
+  <h2 class="text-3xl font-bold mb-6">Bienvenidos</h2>
+  <p class="mb-10 max-w-2xl mx-auto">
+    Este portal presenta información sobre tecnologías emergentes. Aquí se muestran los integrantes del equipo y una breve descripción de cada uno.
+  </p>
+
+  <div class="grid md:grid-cols-5 gap-6">
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow hover:scale-105 transition">
+      <img src="integrantes/1.jpeg" alt="Integrante 1" class="w-32 h-32 mx-auto rounded mb-4">
+      <h3 class="font-bold">Carlos Aguilera</h3>
+      <p class="text-sm">Estudiante de desarrollo de software, 22 años.</p>
+    </div>
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow hover:scale-105 transition">
+      <img src="integrantes/4.jpeg" alt="Integrante 2" class="w-32 h-32 mx-auto rounded mb-4">
+      <h3 class="font-bold">Laura Benites</h3>
+      <p class="text-sm">Estudiante de desarrollo de software, 19 años.</p>
+    </div>
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow hover:scale-105 transition">
+      <img src="integrantes/2.jpeg" alt="Integrante 3" class="w-32 h-32 mx-auto rounded mb-4">
+      <h3 class="font-bold">Nicolas Cifuentes</h3>
+      <p class="text-sm">Estudiante de desarrollo de software, 21 años.</p>
+    </div>
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow hover:scale-105 transition">
+      <img src="integrantes/3.jpeg" alt="Integrante 4" class="w-32 h-32 mx-auto rounded mb-4">
+      <h3 class="font-bold">Christian Lindao</h3>
+      <p class="text-sm">Diseñador gráfico, dibujante digital y estudiante de programación, 22 años.</p>
+    </div>
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded shadow hover:scale-105 transition">
+      <img src="integrantes/5.jpg" alt="Integrante 1" class="w-32 h-32 mx-auto rounded mb-4">
+      <h3 class="font-bold">Gabriel Valencia</h3>
+      <p class="text-sm">Estudiante de desarrollo de software, 22 años.</p>
+    </div>
+  </div>
+</section>
+
+    <section id="ia" class="py-12">
+      <h2 class="text-2xl font-bold mb-6">Inteligencia Artificial</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-4 border rounded shadow">
+          <h3 class="font-semibold mb-2">¿Qué es la IA?</h3>
+          <p class="text-sm mb-4">La IA es la simulación de procesos de inteligencia humana por parte de sistemas informáticos.</p>
+          <img loading="lazy" src="https://attachmedia.com/blog/wp-content/uploads/2020/11/inteligencia-artificial-1.png" alt="IA" 
+               class="w-full rounded shadow cursor-pointer transition-transform duration-300"
+               onclick="toggleZoom(this)">
+        </div>
+        <div class="p-4 border rounded shadow">
+          <h3 class="font-semibold mb-2">Tipos de IA</h3>
+          <p class="text-sm mb-4">IA débil (especializada) e IA fuerte (general), con distintos niveles de autonomía.</p>
+          <img loading="lazy" src="https://uni.edu.gt/wp-content/uploads/sites/19/2024/11/Tipos-de-Inteligencia-Artificial-cuales-hay-y-como-usarlos2.jpg" alt="Tipos de IA"
+               class="w-full rounded shadow cursor-pointer transition-transform duration-300"
+               onclick="toggleZoom(this)">
+        </div>
+        <div class="p-4 border rounded shadow">
+          <h3 class="font-semibold mb-2">Aplicaciones Actuales</h3>
+          <p class="text-sm mb-4">Asistentes virtuales, diagnósticos médicos, vehículos autónomos y más.</p>
+          <img loading="lazy" src="https://supercurioso.com/wp-content/uploads/2018/11/avances-en-tecnolog%C3%ADa.jpg" alt="Aplicaciones IA"
+               class="w-full rounded shadow cursor-pointer transition-transform duration-300"
+               onclick="toggleZoom(this)">
+        </div>
+      </div>
+    </section>
+
+    <section id="ml" class="py-12">
+      <h2 class="text-2xl font-bold mb-6">Machine Learning</h2>
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Fundamentos:</strong> modelos entrenados con datos para hacer predicciones.</li>
+          <li><strong>Algoritmos Principales:</strong> regresión lineal, redes neuronales, árboles de decisión.</li>
+          <li><strong>Casos de Uso:</strong> reconocimiento de voz, motores de recomendación, análisis financiero.</li>
+        </ul>
+        <img loading="lazy" src="https://www.equiposytalento.com/upload/talent_noticias/004/4413/machinelearningts.jpg" alt="Machine Learning"
+     class="rounded shadow cursor-pointer transition-transform duration-300 mx-auto w-80"
+     onclick="toggleZoom(this)">
+      </div>
+    </section>
+
+    <section id="tec" class="py-12">
+      <h2 class="text-2xl font-bold mb-6">Tecnologías Emergentes</h2>
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>Realidad Virtual / AR:</strong> experiencias inmersivas para educación y entretenimiento.</li>
+          <li><strong>Blockchain:</strong> registro distribuido aplicado en finanzas, contratos y trazabilidad.</li>
+          <li><strong>Internet de las Cosas (IoT):</strong> objetos conectados que recopilan y comparten datos.</li>
+        </ul>
+        <img loading="lazy" src="https://img.freepik.com/premium-photo/cyborg-man-with-virtual-reality-glasses-3d-rendering-dark-backgroundgenerative-ai_391052-14595.jpg" alt="Tecnologías Emergentes"
+             class="rounded shadow cursor-pointer transition-transform duration-300 mx-auto w-80"
+             onclick="toggleZoom(this)">
+      </div>
+    </section>
+
+    <section id="tendencias" class="py-12">
+      <h2 class="text-2xl font-bold mb-6">Tendencias 2025</h2>
+      <p>En 2025 destacan tendencias como la IA generativa, la expansión del IoT, y la adopción del blockchain en más sectores.</p>
+    </section>
+
+    <section id="videos" class="py-12">
+      <h2 class="text-2xl font-bold mb-6">Videos Educativos</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="aspect-video w-full rounded shadow overflow-hidden hover:scale-105 transition">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/XLdGwrmyKr8" title="Avances tecnológicos 2025" loading="lazy" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="aspect-video w-full rounded shadow overflow-hidden hover:scale-105 transition">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/CpSvDAe5zZU" title="Innovaciones digitales" loading="lazy" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="py-12">
+      <h2 class="text-2xl font-bold mb-6">Recursos Externos</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="https://www.coursera.org/" target="_blank" class="text-primario hover:underline">Coursera - Cursos de IA y ML</a></li>
+        <li><a href="https://www.khanacademy.org/" target="_blank" class="text-primario hover:underline">Khan Academy - Recursos Educativos</a></li>
+        <li><a href="https://www.edx.org/" target="_blank" class="text-primario hover:underline">edX - Cursos Universitarios Online</a></li>
+      </ul>
+    </section>
+
+    <section id="contacto" class="py-12">
+      <h2 class="text-2xl font-bold mb-6">Contacto</h2>
+      <form class="grid gap-4 max-w-md mx-auto bg-gray-100 dark:bg-gray-800 p-6 rounded shadow" onsubmit="return validarFormulario()">
+        <input type="text" id="nombre" placeholder="Nombre" class="border p-2 rounded" required>
+        <input type="email" id="correo" placeholder="Correo" class="border p-2 rounded" required>
+        <textarea id="mensaje" placeholder="Mensaje" class="border p-2 rounded" required></textarea>
+        <button type="submit" class="bg-primario text-white py-2 rounded hover:bg-blue-700 transition">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="bg-primario text-white text-center py-4 mt-12">
+    <p>&copy; 2025 Portal Tecnologías Emergentes. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+    }
+
+    function toggleFont() {
+      const body = document.body;
+      if (body.classList.contains('font-normal')) {
+        body.classList.replace('font-normal', 'font-fancy');
+      } else {
+        body.classList.replace('font-fancy', 'font-normal');
+      }
+    }
+
+    function validarFormulario() {
+      const nombre = document.getElementById('nombre').value.trim();
+      const correo = document.getElementById('correo').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+
+      if (!nombre || !correo || !mensaje) {
+        alert("Por favor completa todos los campos.");
+        return false;
+      }
+      return true;
+    }
+    
+    // Animación tipo Wikipedia (zoom al hacer clic)
+    function toggleZoom(img) {
+      img.classList.toggle("scale-150");
+    }
+  </script>
+</body>
+</html>
