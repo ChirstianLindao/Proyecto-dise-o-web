@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Tecnologías Emergentes</title>
+
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #696D78, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      scroll-behavior: smooth;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    .nav-wrapper, footer {
+      background-color: #343a40;
+      transition: top 0.3s ease;
+    }
+
+    .brand-logo {
+      font-weight: bold;
+    }
+
+    .animated-image {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 1s ease-in-out;
+    }
+
+    .animated-image.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .green-circle {
+      width: 120px;
+      height: 120px;
+      background-color: #2ecc71;
+      border-radius: 50%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .green-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .spin {
+      transform: rotate(360deg);
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 30px 0;
+      font-weight: bold;
+    }
+
+    .right li a {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .right li a:hover {
+      background-color: #495057;
+      border-radius: 5px;
+      transform: scale(1.05);
+    }
+
+    footer .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      padding: 10px;
+    }
+
+    footer .material-icons {
+      margin-right: 8px;
+    }
+
+    .content-section {
+      padding: 50px 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .content-section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .content-section h3 {
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+
+    .content-section ul {
+      margin-left: 20px;
+      list-style-type: disc;
+    }
+
+    /* Contact form */
+    .contact-form {
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo" style="margin-left: 15px;">Portal de Tecnologías Emergentes</a>
+      <ul class="right hide-on-med-and-down" style="margin-right: 15px;">
+        <li><a href="#ia">INTELIGENCIA ARTIFICIAL</a></li>
+        <li><a href="#ml">MACHINE LEARNING</a></li>
+        <li><a href="#te">TECNOLOGIAS EMERGENTES</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row" style="margin-top:30px;">
+        <div class="col s12 m6">
+          <h4 class="white-text" style="font-weight:bold;">Bienvenido</h4>
+          <p class="white-text" style="font-weight:bold;">
+            Las tecnologías emergentes son aquellas innovaciones científicas y técnicas que se encuentran en proceso de desarrollo o adopción temprana, pero que tienen un fuerte potencial para transformar la sociedad, la economía y la vida cotidiana en el futuro cercano. Se distinguen porque introducen cambios disruptivos en comparación con las tecnologías ya existentes, ofreciendo soluciones más rápidas, eficientes o completamente nuevas a problemas actuales. Además, suelen estar relacionadas con la digitalización, la automatización, la inteligencia artificial, la biotecnología, las energías renovables, entre otras áreas de vanguardia.
+          </p>
+        </div>
+        <div class="col s12 m6 center-align">
+          <img id="techImage" class="animated-image"
+            src="https://i.pinimg.com/736x/fd/62/fe/fd62fee0a4be86213bb3c34874536705.jpg"
+            alt="Tecnologías Emergentes">
+        </div>
+      </div>
+
+      <h5 class="section-title">DESARROLLADORES</h5>
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Christian Lindao</span>
+              <p>Diseñador gráfico, dibujante digital y estudiante de programación, 22 años.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Laura Benitez</span>
+              <p>19 años estudiante Desarrollo de Software</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Carlos Aguilera</span>
+              <p>Descripción de miembro 3.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Bryan Granoble</span>
+              <p>Estudiante de desarrollo de software, 23 años.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row center-align">
+        <div class="col s12 m3"><div class="green-circle"><img src="https://i.pinimg.com/736x/16/dc/13/16dc13d2816e1020eac03b05f003687d.jpg"></div></div>
+        <div class="col s12 m3"><div class="green-circle"><img src="https://i.pinimg.com/736x/e3/e1/5c/e3e15c65ffc7988f5092a2261be76ef0.jpg"></div></div>
+        <div class="col s12 m3"><div class="green-circle"><img src="https://i.pinimg.com/736x/4a/0d/fd/4a0dfde9cc1f48503a9ee13131feeb45.jpg"></div></div>
+        <div class="col s12 m3"><div class="green-circle"><img src="https://i.pinimg.com/736x/59/95/b1/5995b1d6dd9c28ef9df7b5f592131237.jpg"></div></div>
+      </div>
+
+      <div id="ia" class="content-section card"><h3>Inteligencia Artificial</h3>
+        <ul>
+          <li><b>¿Qué es la IA?</b> Simulación de procesos de inteligencia humana mediante software y máquinas que aprenden y toman decisiones.</li>
+          <li><b>Tipos de IA:</b> Débil, Fuerte, General.</li>
+          <li><b>Aplicaciones actuales:</b> asistentes virtuales, reconocimiento de voz, diagnóstico médico.</li>
+        </ul>
+      </div>
+
+      <div id="ml" class="content-section card"><h3>Machine Learning</h3>
+        <ul>
+          <li><b>Fundamentos:</b> Permite a las máquinas aprender de datos sin programación explícita.</li>
+          <li><b>Algoritmos:</b> Regresión, Árboles de decisión, Redes neuronales, SVM.</li>
+          <li><b>Casos de uso:</b> sistemas de recomendación, detección de fraudes, predicción de demanda.</li>
+        </ul>
+      </div>
+
+      <div id="te" class="content-section card"><h3>Tecnologías Emergentes</h3>
+        <ul>
+          <li><b>Realidad Virtual / AR:</b> Educación, simulaciones, entretenimiento.</li>
+          <li><b>Blockchain:</b> Registro seguro, trazabilidad, finanzas.</li>
+          <li><b>Internet de las Cosas:</b> Hogares inteligentes, monitoreo industrial.</li>
+        </ul>
+        <p>Recursos educativos:
+          <a href="https://www.bbva.com/es/innovacion/inteligencia-artificial/" target="_blank">BBVA Innovación IA</a> | 
+          <a href="https://www.educaciontrespuntocero.com/tecnologia/" target="_blank">Educación 3.0 Tecnología</a>
+        </p>
+      </div>
+
+      <div id="contacto" class="contact-form">
+        <h4>Contacto</h4>
+        <form id="contactForm">
+          <div class="input-field">
+            <input id="name" type="text" required>
+            <label for="name">Nombre</label>
+          </div>
+          <div class="input-field">
+            <input id="email" type="email" required>
+            <label for="email">Correo electrónico</label>
+          </div>
+          <div class="input-field">
+            <textarea id="message" class="materialize-textarea" required></textarea>
+            <label for="message">Mensaje</label>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit">Enviar</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red"><i class="material-icons">play_arrow</i></a>
+    <ul>
+      <li><a class="btn-floating blue tooltipped" data-tooltip="Video IA" target="_blank" href="https://www.youtube.com/watch?v=XGnvpcnxKJc"><i class="material-icons">ondemand_video</i></a></li>
+      <li><a class="btn-floating green tooltipped" data-tooltip="Video ML" target="_blank" href="https://www.youtube.com/watch?v=FdZ8LKiJBhQ"><i class="material-icons">ondemand_video</i></a></li>
+      <li><a class="btn-floating yellow darken-1 tooltipped" data-tooltip="Video Tecnologías" target="_blank" href="https://www.youtube.com/watch?v=NdNyYcAJQr8"><i class="material-icons">ondemand_video</i></a></li>
+    </ul>
+  </div>
+
+<div class="container" style="margin: 50px 0;">
+  <h4 class="section-title">Video Recomendado</h4>
+  <div class="video-container">
+    <iframe width="853" height="480" 
+      src="https://www.youtube.com/embed/FdZ8LKiJBhQ?start=8" 
+      title="Video de Machine Learning" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+  <footer>
+    <div class="footer-content">
+      <span>Contacto: clindao1980@gmail.com</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Animación de imagen principal
+      setTimeout(() => document.getElementById("techImage").classList.add("show"), 300);
+
+      // Giro de los círculos
+      document.querySelectorAll(".green-circle img").forEach(img => {
+        img.addEventListener("mouseenter", () => {
+          img.classList.add("spin");
+          setTimeout(() => img.classList.remove("spin"), 600);
+        });
+      });
+
+      M.FloatingActionButton.init(document.querySelectorAll('.fixed-action-btn'), {direction:'left', hoverEnabled:false});
+      M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) entry.target.classList.add('show');
+        });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.content-section').forEach(s => observer.observe(s));
+
+  
+      let prevScroll = window.pageYOffset;
+      const navbar = document.getElementById("navbar");
+      window.onscroll = function() {
+        let current = window.pageYOffset;
+        navbar.style.top = (prevScroll > current) ? "0" : "-80px";
+        prevScroll = current;
+      };
+
+ 
+      document.getElementById("contactForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        M.toast({html: 'Formulario enviado correctamente', classes:'green'});
+        this.reset();
+      });
+    });
+  </script>
+</body>
+</html>
